@@ -1,0 +1,25 @@
+version: '3'
+services: 
+    test:
+        build: 
+            context: .
+            dockerfile: dev.dockerfile
+        image: tiger
+        volumes: 
+            - .:/code
+        environment: 
+            - TZ=Asia/Taipei
+        command: bash -c "date && echo '$PWD'"
+    
+    # base:
+    #     build: 
+    #         context: .
+    #         dockerfile: test.dockerfile
+    #     image: ppp
+    #     # command: python -V 
+    #     environment: 
+    #         TZ: Asia/Taipei
+    #     working_dir: /code
+    #     volumes: 
+    #         - .:/code
+    #     command: date

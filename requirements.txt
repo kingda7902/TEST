@@ -1,0 +1,11 @@
+Django>=3.0
+django_settings_export>=1.2
+django-filter>=2.2
+django-ipware>=2.1
+django-user-sessions>=1.7
+djangorestframework>=3.11
+mysqlclient>=1.4
+ptvsd             ## remote debug in vscode 
+requests>=2.23
+uwsgi>=2.0
+django-uwsgi
